@@ -1,0 +1,37 @@
+# Version updates run monthly and are grouped per ecosystem to keep the number of pull requests low.
+# Security updates are independent of this schedule and are enabled in the repository settings.
+version: 2
+updates:
+  - package-ecosystem: maven
+    directory: /backend
+    schedule:
+      interval: monthly
+    commit-message:
+      prefix: chore
+    groups:
+      backend:
+        patterns: ['*']
+
+  - package-ecosystem: npm
+    directory: /frontend
+    schedule:
+      interval: monthly
+    commit-message:
+      prefix: chore
+    groups:
+      frontend:
+        patterns: ['*']
+    ignore:
+      # TypeScript 7 is not supported by typescript-eslint yet (ADR-0002).
+      - dependency-name: typescript
+        update-types: ['version-update:semver-major']
+
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: monthly
+    commit-message:
+      prefix: chore
+    groups:
+      actions:
+        patterns: ['*']
