@@ -14,6 +14,7 @@ Diplomová práce, Technická univerzita v Liberci. Zadání: [docs/zadani.md](d
 |---|---|
 | [docs/zadani.md](docs/zadani.md) | zadání diplomové práce |
 | [docs/koncepce.md](docs/koncepce.md) | funkční koncepce aplikace |
+| [docs/pozadavky.md](docs/pozadavky.md) | funkční a nefunkční požadavky |
 | [docs/vyvoj.md](docs/vyvoj.md) | vývojářská příručka: prostředí, spuštění, testy, CI, řešení problémů |
 | [docs/konvence.md](docs/konvence.md) | konvence a pravidla implementace |
 | [docs/adr/](docs/adr/) | architektonická rozhodnutí (ADR) |
