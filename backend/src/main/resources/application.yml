@@ -1,0 +1,41 @@
+spring:
+  application:
+    name: shift-planner
+
+  jpa:
+    # No lazy loading in the web layer: services return DTOs.
+    open-in-view: false
+    hibernate:
+      # Schema is owned by Flyway migrations only (ADR-0001).
+      ddl-auto: validate
+    properties:
+      hibernate:
+        # Instants are stored as timestamptz and always read/written in UTC.
+        jdbc:
+          time_zone: UTC
+
+  flyway:
+    locations: classpath:db/migration
+
+  messages:
+    # Czech is the default (base) bundle; English may be added later as messages_en.properties.
+    basename: i18n/messages
+    fallback-to-system-locale: false
+
+  mvc:
+    problemdetails:
+      enabled: true
+
+server:
+  error:
+    include-stacktrace: never
+    include-message: never
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health
+  endpoint:
+    health:
+      show-details: never

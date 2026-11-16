@@ -1,0 +1,33 @@
+{
+  "app": {
+    "name": "Směny recepce",
+    "fullName": "Plánování směn recepce kolejí TUL"
+  },
+  "nav": {
+    "main": "Hlavní navigace",
+    "home": "Přehled"
+  },
+  "home": {
+    "title": "Vítejte",
+    "intro": "Aplikace pro plánování směn a výpočet odměn pracovníků recepce kolejí TUL je ve vývoji."
+  },
+  "system": {
+    "checking": "Ověřuji stav serveru…",
+    "up": "Systém je v pořádku",
+    "down": "Server je nedostupný"
+  },
+  "notFound": {
+    "title": "Stránka nenalezena",
+    "backHome": "Zpět na přehled"
+  },
+  "errors": {
+    "UNAUTHORIZED": "Pro tuto operaci se musíte přihlásit.",
+    "ACCESS_DENIED": "K této operaci nemáte oprávnění.",
+    "VALIDATION_FAILED": "Formulář obsahuje neplatné hodnoty.",
+    "NOT_FOUND": "Požadovaný záznam neexistuje.",
+    "CONFLICT": "Data mezitím změnil někdo jiný. Načtěte stránku znovu.",
+    "INTERNAL_ERROR": "Došlo k neočekávané chybě. Zkuste to prosím znovu později.",
+    "NETWORK_ERROR": "Server je nedostupný. Zkontrolujte připojení.",
+    "UNKNOWN": "Došlo k chybě."
+  }
+}
